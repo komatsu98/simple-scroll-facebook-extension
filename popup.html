@@ -1,0 +1,79 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Simple Scroll</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        #wrapper {
+            width: 400px;
+        }
+
+        .glyphicon-heart {
+            color: red;
+        }
+
+        .title {
+            font-weight: bold;
+            font-size: 18px;
+            text-align: center;
+            margin: 15px;
+        }
+
+        .top-img {
+            background-image: url("http://social.monitaz.com/asset/images/vape-club.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 0;
+            color: white;
+            background-position: 0 26%;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid top-img">
+        <div class="title">Simple Scroll</div>
+    </div>
+    <div id="wrapper">
+        <div class="container-fluid">         
+            <div class="form-group">
+                <small>Thời gian chạy (giây):</small>
+                <input type="text" class="form-control" id="run_time" value="10" placeholder="VD: 10">
+            </div>
+
+            <div class="form-group">
+                <small>Thời gian nghỉ giữa 2 lần cuộn (mili giây):</small>
+                <input type="text" class="form-control" id="scroll_wait_time" value="500" placeholder="VD: 500">
+            </div>
+
+            <div class="form-group">
+                <small>Thời gian nghỉ giữa 2 lần chạy (giây):</small>
+                <input type="text" class="form-control" id="wait_time" value="30" placeholder="VD: 30">
+            </div>
+            <div class="form-group">
+                <button class="btn btn-sm btn-success" id="start">
+                    <span class="glyphicon glyphicon-check" aria-hidden="true"></span>
+                    Bắt đầu !
+                </button>
+                <button class="btn btn-sm btn-warning" id="stop">
+                    <span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span>
+                    Nghỉ chút !
+                </button>
+                <button class="btn btn-sm btn-primary" id="continue">
+                    <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+                    Tiếp tục !
+                </button>
+                <!-- <button class="btn btn-sm btn-danger" id="clear">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                    Reset !
+                </button> -->
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/popup.js"></script>
+</html>
